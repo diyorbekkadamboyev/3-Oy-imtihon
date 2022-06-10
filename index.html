@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Pokemon</title>
+  </head>
+  <body>
+    <!---------------------------------------------------- HEADER ------------------------------------>
+    <header></header>
+
+    <!-------------------------------------------------------- MAIN ---------------------------------->
+    <main>
+      <section class="pokemons">
+        <div
+          class="container pokemons__container d-flex flex-column align-content-center position-relative"
+        >
+          <img
+            class="m-auto"
+            src="./images/pokemon_logo.svg"
+            alt="pokemon logo"
+            width="610"
+            height="225"
+          />
+          <img
+            class="heart position-absolute"
+            src="./images/hearts.png"
+            alt="heart-icon"
+            width="50"
+            height="50"
+          />
+
+          <form class="form d-flex">
+            <select class="form__select" name="gross">
+              <option class="form__option">Gross</option>
+            </select>
+
+            <label class="form__label position-relative">
+              <input class="form__input" type="text" placeholder="Search" />
+            </label>
+
+            <select class="form__select" name="gross">
+              <option class="form__option">Aa-Zz</option>
+            </select>
+
+            <button class="form__button"><b>Button</b></button>
+          </form>
+
+          <ul class="pokemons__list d-flex flex-wrap"></ul>
+        </div>
+      </section>
+    </main>
+
+    <!---------------------------------------- FOOTER------------------------------------------------ -->
+    <footer></footer>
+
+    <script src="./js/pokemons.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
